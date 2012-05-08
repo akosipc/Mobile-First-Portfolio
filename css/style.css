@@ -20,6 +20,7 @@ h1,h2,h3,h4,h5 {
 }
 
 small {
+	padding: 1px;
 	font: 14px/1 'Cabin', Helvetica, Arial, sans-serif;
 	text-align: justify;
 }
@@ -85,6 +86,7 @@ small {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+	border: 2px #888 solid;
 }
 
 .content .divider h6{
@@ -100,11 +102,32 @@ small {
 	color: #333;
 	font: 14px/1.2 'Ubuntu', Georgia, Times, serif;
 	border: 2.5px #FFFFFF solid;
-	height: 100px;
 }
 
 .columns {
-	width: 40%;
-	margin: 10px 5% 10px 5%;
+	width: 20%;
+	margin: 10px 2.5% 10px 2.5%;
 	float: left;
+}
+
+.image-roller {
+	width: 40%;
+	margin: 15px 5% 15px 5%;
+	float: left;
+	text-align: center;
+}
+
+section#stalk img{
+	height: 48px;
+	width: 48px;
+
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	vertical-align: middle;
+}
+
+section#stalk a {
+	margin: 0 0 0 10px;
+	color: #333;
 }
