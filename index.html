@@ -32,20 +32,26 @@
 				</header>
 				<div class="holder">
 					<div class="divider"> 
-						<h6><a href="#" id="skillz">MAD SKILLZ!!</a></h6>
+						<h6><a href="#" id="skillz">Skills</a></h6>
 					</div>
 					<section id="skillz">
 						&nbsp;
 					</section>
 					<div class="divider"> 
-						<h6><a href="#">MAH FOLIO!!</a></h6>
-						<section>
-							&nbsp;
-						</section>
+						<h6><a href="#" id="port">Portfolio</a></h6>
 					</div>
+					<section id="port">
+						&nbsp;
+					</section>
+					<div class="divider"> 
+						<h6><a href="#" id="stalk">Contact Me</a></h6>
+					</div>
+					<section id="stalk">
+						&nbsp;
+					</section>
+					<footer>
+					</footer>
 				</div>
-				<footer>
-				</footer>
 			</article>
 		</section>
 	</body>
@@ -57,15 +63,57 @@
 			$("section.container").css({'top':winH-conH/2});
 		}
 
+		function closeOthers(){
+			if($("section#skillz").is(":visible")){
+				$("section#skillz").slideUp(500);
+			}
+			if($("section#port").is(":visible")){
+				$("section#port").slideUp(500);
+			}
+			if($("section#stalk").is(":visible")){
+				$("section#stalk").slideUp(500);
+			}
+		}
+
 		$("div.holder section").hide();
-		
 		centerContainer();
 
 		$("div.divider a#skillz").click(function (e){
 			e.preventDefault();
-			$("section#skillz").slideDown(1000, function(){
-				centerContainer();
-			});
+			if($("section#skillz").is(":visible")){
+				$("section#skillz").slideUp(500, function(){centerContainer();
+				});
+			} else {
+				closeOthers();
+				$("section#skillz").slideDown(500, function(){
+					centerContainer();
+				});
+			}
+		});
+
+		$("div.divider a#port").click(function (e){
+			e.preventDefault();
+			if($("section#port").is(":visible")){
+				$("section#port").slideUp(500, function(){centerContainer();
+				});
+			} else {
+				closeOthers();
+				$("section#port").slideDown(500, function(){
+					centerContainer();
+				});
+			}
+		});
+		$("div.divider a#stalk").click(function (e){
+			e.preventDefault();
+			if($("section#stalk").is(":visible")){
+				$("section#stalk").slideUp(500, function(){centerContainer();
+				});
+			} else {
+				closeOthers();
+				$("section#stalk").slideDown(500, function(){
+					centerContainer();
+				});
+			}
 		});
 	});
 	</script>
