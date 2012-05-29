@@ -15,11 +15,11 @@ a:hover {
 }
 
 h1,h2,h3,h4,h5 {
-	font: bold 22px/1.2 'Vollkorn', Helvetica, Arial, sans-serif;
+	font: bold 24px/1.2 'Vollkorn', Helvetica, Arial, sans-serif;
 }
 
 small {
-	font: 12px/1 'Vollkorn', Helvetica, Arial, sans-serif;
+	font: 14px/1 'Cabin', Helvetica, Arial, sans-serif;
 	text-align: justify;
 }
 
@@ -90,12 +90,20 @@ small {
 	padding: 2.5px;
 	text-align: center;
 	zoom: 1;
+	font-weight: bold;
 }
 
 .content .holder section {
 	zoom: 1;
 	background: #BBB;
-	height: 200px;
-	font: 14px/1 'Cabin', Helvetica, sans-serif;
+	color: #333;
+	font: 14px/1.2 'Ubuntu', Georgia, Times, serif;
 	border: 2.5px #FFFFFF solid;
+	height: 100px;
+}
+
+.columns {
+	width: 40%;
+	margin: 10px 5% 10px 5%;
+	float: left;
 }
