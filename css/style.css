@@ -32,6 +32,7 @@ small {
 	width: 90%;
 	margin: auto;
 	position: relative;
+	zoom: 1;
 }
 
 .content, .divider, .content .holder section {
@@ -52,6 +53,7 @@ small {
 	-webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 	-moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 	box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+	zoom: 1;
 }
 
 .divider {
@@ -66,6 +68,7 @@ small {
 	-webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 	-moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 	box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+	zoom: 1;
 }
 
 .content header{
@@ -85,10 +88,12 @@ small {
 
 .content .divider h6{
 	padding: 2.5px;
-	text-align: center;	
+	text-align: center;
+	zoom: 1;
 }
 
 .content .holder section {
+	zoom: 1;
 	background: #BBB;
 	height: 200px;
 	font: 14px/1 'Cabin', Helvetica, sans-serif;

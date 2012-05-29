@@ -17,14 +17,19 @@ $(document).ready(function(){
 		}
 	}
 
-	$("div.holder section").hide();
-	centerContainer();
+	if($.browser.msie && $.browser.version == 7){
+		$("div.holder section").show();
+		alert("Use a higher version of IE for better viewing");
+	} else {
+		$("div.holder section").hide();	
+		centerContainer();
+	}
 
 	$("div.divider a#skillz").click(function (e){
 		e.preventDefault();
-		if($("section#skillz").is(":visible")){
-			$("section#skillz").slideUp(500, function(){centerContainer();
-			});
+
+		if($("section#skillz").is(":visible")){ 
+			$("section#skillz").slideUp(500, function(){centerContainer();});
 		} else {
 			closeOthers();
 			$("section#skillz").slideDown(500, function(){
