@@ -4,14 +4,15 @@ body {
 	color: #EEE;
 }
 
-a {
+a, div.divider {
 	text-align: center;
 	text-decoration: none;
 	color: #EEE;
 }
 
-a:hover {
+a:hover, div.divider:hover {
 	text-decoration: underline;
+	cursor: pointer;
 }
 
 h1,h2,h3,h4,h5 {

@@ -25,9 +25,8 @@ $(document).ready(function(){
 		centerContainer();
 	}
 
-	$("div.divider a#skillz").click(function (e){
+	$("div#skillz").click(function (e){
 		e.preventDefault();
-
 		if($("section#skillz").is(":visible")){ 
 			$("section#skillz").slideUp(500, function(){centerContainer();});
 		} else {
@@ -37,12 +36,10 @@ $(document).ready(function(){
 			});
 		}
 	});
-
-	$("div.divider a#port").click(function (e){
+	$("div#port").click(function (e){
 		e.preventDefault();
 		if($("section#port").is(":visible")){
-			$("section#port").slideUp(500, function(){centerContainer();
-			});
+			$("section#port").slideUp(500, function(){centerContainer();});
 		} else {
 			closeOthers();
 			$("section#port").slideDown(500, function(){
@@ -50,11 +47,10 @@ $(document).ready(function(){
 			});
 		}
 	});
-	$("div.divider a#stalk").click(function (e){
+	$("div#stalk").click(function (e){
 		e.preventDefault();
 		if($("section#stalk").is(":visible")){
-			$("section#stalk").slideUp(500, function(){centerContainer();
-			});
+			$("section#stalk").slideUp(500, function(){centerContainer();});
 		} else {
 			closeOthers();
 			$("section#stalk").slideDown(500, function(){
