@@ -12,8 +12,8 @@
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/media.css">
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Cabin|Ubuntu|Vollkorn">
-		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<!--<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Cabin|Ubuntu|Vollkorn">
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>-->
 		<!--[if lt IE 9]><script src="js/html5.js" type="text/javascript"></script><![endif]-->
 		<!--[if gte IE 9]><style type="text/css">.gradient{filter: none;}</style><![endif]-->
 		<title></title>
@@ -29,13 +29,19 @@
 					<hr></hr>
 					<small>Mobile First Web Design Advocate, Agnostic Web Developer and Future Certified Scrum Professional</small>
 				</header>
-				<div class="clearFix">
-				<div class="divider"> 
-					&nbsp;
+				<div class="clearFix"></div>
+				<div class="contert">
+					<div class="divider" id="skillz">
+						<h6><a href="#">MAD SKILLZ!</a><h6>
+					</div>
+					<section id="skillz">
+					</section>
+					<div class="divider">
+						<h6><a href="#">FOLIO!!</a><h6>
+					</div>
+					<section>
+					</section>
 				</div>
-				<section>
-
-				</section>
 				<footer>
 
 				</footer>
@@ -48,6 +54,9 @@
 		var conH = $('section.container').height();
 
 		$("section.container").css({'top':winH-conH/2});
+		$("section.container section").hide();
+
+		
 	});
 	</script>
 </html>
