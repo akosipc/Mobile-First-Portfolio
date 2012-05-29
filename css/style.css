@@ -4,7 +4,17 @@ body {
 	color: #EEE;
 }
 
-h1,h2,h3,h4,h5,h6{
+a {
+	text-align: center;
+	text-decoration: none;
+	color: #EEE;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1,h2,h3,h4,h5 {
 	font: bold 22px/1.2 'Vollkorn', Helvetica, Arial, sans-serif;
 }
 
@@ -66,25 +76,26 @@ small {
 
 .content header .image-holder {
 	float: right;
-
+	height: 90%;
 }
 
 .content header img {
-	float: right;
-	margin: auto;
-	height: 90%;
-	width: 90%;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
 
 .content .divider {
-
 }
 
-.content section {
+.content .divider h6{
+	text-align: center;	
+}
 
+.content .holder section {
+	background: #EEE;
+	height: 200px;
+	font: 14px/1 'Cabin', Helvetica, sans-serif;
 }
 
 .content footer {

@@ -32,26 +32,41 @@
 				</header>
 				<div class="holder">
 					<div class="divider"> 
-						<section>
-						</section>
+						<h6><a href="#" id="skillz">MAD SKILLZ!!</a></h6>
 					</div>
+					<section id="skillz">
+						&nbsp;
+					</section>
 					<div class="divider"> 
+						<h6><a href="#">MAH FOLIO!!</a></h6>
 						<section>
+							&nbsp;
 						</section>
 					</div>
 				</div>
 				<footer>
-
 				</footer>
 			</article>
 		</section>
 	</body>
 	<script>
 	$(document).ready(function(){
-		var winH = $(window).height() / 2;
-		var conH = $('section.container').height();
+		function centerContainer(){
+			var winH = $(window).height() / 2;
+			var conH = $('section.container').height();
+			$("section.container").css({'top':winH-conH/2});
+		}
 
-		$("section.container").css({'top':winH-conH/2});
+		$("div.holder section").hide();
+		
+		centerContainer();
+
+		$("div.divider a#skillz").click(function (e){
+			e.preventDefault();
+			$("section#skillz").slideDown(1000, function(){
+				centerContainer();
+			});
+		});
 	});
 	</script>
 </html>
