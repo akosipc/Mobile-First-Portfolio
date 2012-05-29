@@ -4,17 +4,8 @@ body {
 	color: #EEE;
 }
 
-h1,h2,h3,h4,h5{
+h1,h2,h3,h4,h5,h6{
 	font: bold 24px/1.2 'Vollkorn', Helvetica, Arial, sans-serif;
-}
-
-a {
-	text-decoration: none;
-	color:#EEE;
-}
-
-a:hover {
-	text-decoration: underline;
 }
 
 small {
@@ -27,11 +18,6 @@ small {
 	width: 90%;
 	margin: auto;
 	position: relative;
-}
-
-.container section {
-	background: #EEE;
-	height: 200px;
 }
 
 .clearFix {
@@ -55,6 +41,9 @@ small {
 	box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 }
 
+.content {
+	height: 500px;
+}
 .divider, footer {
 	height: 25px;
 
@@ -72,11 +61,6 @@ small {
 	-webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 	-moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 	box-shadow:0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-}
-
-.divider h6 {
-	text-align: center;
-	padding: 2px;
 }
 
 .content header{
