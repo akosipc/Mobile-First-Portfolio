@@ -2,7 +2,11 @@ $(document).ready(function(){
 	function centerContainer(){
 		var winH = $(window).height() / 2;
 		var conH = $('section.container').height();
-		$("section.container").animate({top : winH-conH/2}, 250);
+		var H = winH - conH / 2;
+		if(H < 0){
+			H = 0;
+		}
+		$("section.container").animate({top : H}, 250);
 	}
 
 	function closeOthers(){

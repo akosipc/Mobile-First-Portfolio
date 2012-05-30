@@ -117,10 +117,23 @@ small {
 	text-align: center;
 }
 
-.image-roller img {
-	height: 100%;
-	vertical-align: middle;
+.grip {
+	overflow: hidden;
+	height: 75px;
+	width: 75px;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	margin-left: 25%;
 }
+
+.grip ul li{
+	height: 75px;
+	width: 75px;
+	float:left;
+}
+
 
 section#stalk img{
 	height: 48px;
