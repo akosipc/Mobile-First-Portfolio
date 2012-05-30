@@ -128,12 +128,11 @@ small {
 	margin-left: 25%;
 }
 
-.grip ul li{
+.grip ul{
 	height: 75px;
 	width: 75px;
 	float:left;
 }
-
 
 section#stalk img{
 	height: 48px;

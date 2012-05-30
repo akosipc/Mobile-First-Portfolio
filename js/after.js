@@ -21,6 +21,20 @@ $(document).ready(function(){
 		}
 	}
 
+	function fadingImages(){
+		$.each($(".grip ul li:first"), function(){
+			$(this).delay(1000).fadeOut(500, function(){
+				$(".grip ul li:last").before($(this));
+			});
+		});
+	}
+
+	function resetImages(){
+		$.each($(".grip ul li"), function(){
+			$(this).show();
+		});
+	}
+
 	if($.browser.msie && $.browser.version == 7){
 		$("div.holder section").show();
 		alert("Use a higher version of IE for better viewing");
@@ -33,13 +47,20 @@ $(document).ready(function(){
 		e.preventDefault();
 		if($("section#skillz").is(":visible")){ 
 			$("section#skillz").slideUp(500, function(){centerContainer();});
+			resetImages();
 		} else {
 			closeOthers();
 			$("section#skillz").slideDown(500, function(){
 				centerContainer();
 			});
+			setInterval(function(){
+				fadingImages();
+				resetImages();
+			}, 2000);
 		}
 	});
+
+
 	
 	$("div#port").click(function (e){
 		e.preventDefault();
@@ -52,6 +73,7 @@ $(document).ready(function(){
 			});
 		}
 	});
+
 	$("div#stalk").click(function (e){
 		e.preventDefault();
 		if($("section#stalk").is(":visible")){
