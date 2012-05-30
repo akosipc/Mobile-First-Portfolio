@@ -134,6 +134,24 @@ small {
 	float:left;
 }
 
+section#port {
+	height: 100px;
+}
+
+section#port a{
+	position: relative;
+	float:left;
+}
+
+section#port a#forward{
+	float:right;
+}
+
+section#port img {
+	width: 50px;
+	height: 50px;
+}
+
 section#stalk img{
 	height: 48px;
 	width: 48px;

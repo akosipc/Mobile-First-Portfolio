@@ -9,6 +9,13 @@ $(document).ready(function(){
 		$("section.container").animate({top : H}, 250);
 	}
 
+	function centerArrows(){
+		var portH = $("section#port").height() / 2;
+		var imageH = $("section#port img").height();
+
+		$("section#port a").animate({top : portH - imageH / 2}, 250);
+	}
+
 	function closeOthers(){
 		if($("section#skillz").is(":visible")){
 			$("section#skillz").slideUp(500);
@@ -64,6 +71,7 @@ $(document).ready(function(){
 	
 	$("div#port").click(function (e){
 		e.preventDefault();
+		centerArrows();
 		if($("section#port").is(":visible")){
 			$("section#port").slideUp(500, function(){centerContainer();});
 		} else {

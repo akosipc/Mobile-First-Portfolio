@@ -1,7 +1,3 @@
-@media only screen and (max-width: 720px){
-
-}
-
 @media only screen and (max-width: 480px){
 	body, small {
 		font-size: 11px;
@@ -20,6 +16,8 @@
 	.grip, .grip ul, .grip img{
 		width: 50px;
 		height: 50px;
+		text-align: center;
+		vertical-align: middle;
 	}
 	.content .image-holder{
 		text-align: center;
@@ -29,5 +27,9 @@
 		height: 75%;
 		width: 75%;
 		text-align: center;
+	}
+	section#port img{
+		height: 35px;
+		width: 35px;
 	}
 }
