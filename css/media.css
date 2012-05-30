@@ -4,13 +4,14 @@
 
 @media only screen and (max-width: 480px){
 	body, small {
-		font-size: 12px;
+		font-size: 11px;
+		text-align: justify;
 	}	
 	h1,h2,h3,h4,h5 {
-		font-size: 18px;
+		font-size: 16px;
 	}
 	.content .holder section {
-		font-size: 12px;
+		font-size: 11px;
 	}
 	section#stalk img{
 		height: 24px;
@@ -19,5 +20,14 @@
 	.grip, .grip ul, .grip img{
 		width: 50px;
 		height: 50px;
+	}
+	.content .image-holder{
+		text-align: center;
+		vertical-align: middle;
+	}
+	.content header img {
+		height: 75%;
+		width: 75%;
+		text-align: center;
 	}
 }
