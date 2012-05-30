@@ -135,7 +135,7 @@ small {
 }
 
 section#port {
-	height: 100px;
+	height: 200px;
 }
 
 section#port a{
@@ -150,6 +150,11 @@ section#port a#forward{
 section#port img {
 	width: 50px;
 	height: 50px;
+	z-index: 100;
+
+	opacity: 0.50;
+	-moz-opacity: 0.50;
+	filter:alpha(opacity=50);
 }
 
 section#stalk img{

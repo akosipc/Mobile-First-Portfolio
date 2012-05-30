@@ -66,8 +66,6 @@ $(document).ready(function(){
 			}, 2000);
 		}
 	});
-
-
 	
 	$("div#port").click(function (e){
 		e.preventDefault();
