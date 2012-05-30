@@ -90,7 +90,7 @@ small {
 }
 
 .content .divider h6{
-	padding: 2.5px;
+	padding: 5px;
 	text-align: center;
 	zoom: 1;
 	font-weight: bold;
@@ -100,7 +100,7 @@ small {
 	zoom: 1;
 	background: #BBB;
 	color: #333;
-	font: 14px/1.2 'Ubuntu', Georgia, Times, serif;
+	font: 16px/1.2 'Ubuntu', Georgia, Times, serif;
 	border: 2.5px #FFFFFF solid;
 }
 
@@ -115,6 +115,11 @@ small {
 	margin: 15px 5% 15px 5%;
 	float: left;
 	text-align: center;
+}
+
+.image-roller img {
+	height: 100%;
+	vertical-align: middle;
 }
 
 section#stalk img{

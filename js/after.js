@@ -36,6 +36,7 @@ $(document).ready(function(){
 			});
 		}
 	});
+	
 	$("div#port").click(function (e){
 		e.preventDefault();
 		if($("section#port").is(":visible")){
