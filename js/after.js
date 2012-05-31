@@ -9,11 +9,13 @@ $(document).ready(function(){
 		$("section.container").animate({top : H}, 250);
 	}
 
-	function centerArrows(){
+	function centerPort(){
 		var portH = $("section#port").height() / 2;
 		var imageH = $("section#port img").height();
+		var captionH = $("section#port div.caption").height();
 
-		$("section#port a").animate({top : portH - imageH / 2}, 250);
+		$("section#port a").animate({top : portH - imageH / 2 - captionH}, 250);
+		$("section#port div.caption").animate({top : portH * 2 - captionH}, 500);
 	}
 
 	function closeOthers(){
@@ -30,7 +32,7 @@ $(document).ready(function(){
 
 	function fadingImages(){
 		$.each($(".grip ul li:first"), function(){
-			$(this).delay(1000).fadeOut(500, function(){
+			$(this).fadeOut(500, function(){
 				$(".grip ul li:last").before($(this));
 			});
 		});
@@ -69,7 +71,7 @@ $(document).ready(function(){
 	
 	$("div#port").click(function (e){
 		e.preventDefault();
-		centerArrows();
+		centerPort();
 		if($("section#port").is(":visible")){
 			$("section#port").slideUp(500, function(){centerContainer();});
 		} else {

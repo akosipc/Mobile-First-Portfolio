@@ -1,3 +1,8 @@
+html {
+	width: 100%;
+	height: 100%;
+}
+
 body {
 	background: url('../img/dark_geometric.png');
 	font: 14px/1.25em 'Ubuntu', Georgia, Times, serif;
@@ -43,7 +48,7 @@ small {
 	border-radius: 5px;
 }
 
-.content {
+.content, section#port div.caption {
 	background:#2c2c2c;
 	background:-moz-linear-gradient(top, #333333, #222222);
 	background:-ms-linear-gradient(top, #333333, #222222);
@@ -155,6 +160,27 @@ section#port img {
 	opacity: 0.50;
 	-moz-opacity: 0.50;
 	filter:alpha(opacity=50);
+}
+
+section#port div.caption {
+	height: 40px;
+	width: 100%;
+	z-index: 101;
+	position: relative;
+	opacity: .88;	
+	-moz-opacity: .88;
+	filter:alpha(opacity=88);
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color: #CCC;
+	float: none;
+}
+
+section#port div.caption p {
+	vertical-align: middle;
+	text-align: justify;
 }
 
 section#stalk img{
